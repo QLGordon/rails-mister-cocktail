@@ -13,3 +13,16 @@
 @import "layouts/index";
 @import "components/index";
 @import "pages/index";
+@import "cocktails";
+
+a {
+  text-decoration: none !important;
+  color: rgba(255,255,255,.8);
+  transition: color .25s ease-in-out;
+  &:hover {
+    color: rgba(255,255,255,1);
+  }
+}
+h1 {
+  margin: 0px;
+}

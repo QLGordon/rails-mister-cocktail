@@ -1,3 +1,47 @@
 // Place all the styles related to the Cocktails controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+#cocktails {
+  // height: 100vh;
+  display: flex;
+  // align-item: center;
+  justify-content: space-between;
+  .btn {
+    border: none;
+    border-radius: 0px;
+    background: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    transition: padding-right .25s ease-in-out;
+    span {
+      display: none;
+    }
+    &:hover{
+      padding-right: 72pt;
+      span { display: inline;}
+    }
+  }
+  article {
+    flex: 1;
+    text-align: center;
+
+    transition: padding .2s;
+    padding: 3em;
+    &:hover {
+      padding: 3em 4em;
+    }
+  }
+}
+
+#cocktail {
+  display: flex;
+  justify-content: space-evenly;
+  align-item: center;
+  height: 100vh;
+  color: white;
+  div {
+  border: solid 2px red;
+
+  }
+}

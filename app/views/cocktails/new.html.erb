@@ -1,12 +1,14 @@
-<div class="container">
-  <div class="row">
-    <div class="col-md-8 col-md-offset-2">
+<section id="cocktail" style="
+  background:
+  linear-gradient(33deg, rgba(0,0,0,.8), rgba(0,0,0,.05)),
+  url(https://e3.365dm.com/18/04/1096x616/wine-beer-drinking-sky-news_4281255.jpg?20180413075553) no-repeat center;
+  background-size: cover;"
+>
       <h1>Create a new cocktail</h1>
-
+      <div>
       <%= simple_form_for @cocktail do |f| %>
         <%= f.input :name %>
         <%= f.button :submit, class: 'btn btn-primary' %>
       <% end %>
-    </div>
-  </div>
-</div>
+      </div>
+</section>
